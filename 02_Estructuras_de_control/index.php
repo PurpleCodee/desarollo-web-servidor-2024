@@ -30,6 +30,24 @@
                 </td>
                 <td>Ejercicios de comparaciones con números</td>
             </tr>
+            <tr>
+                <td>
+                    <a href="fechas.php">fechas.php</a>
+                </td>
+                <td>Ejercicios de comparaciones con fechas</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="numeros_aleatorios.php">números_aleatorios.php</a>
+                </td>
+                <td>Ejercicios de comparaciones con números aleatorios</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="clases_semanas.php">clases_semanas.php</a>
+                </td>
+                <td>Ejercicios de comparaciones con clases de la semanas</td>
+            </tr>
         </tbody>
     </table>
 </body>
