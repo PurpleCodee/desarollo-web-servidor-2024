@@ -43,7 +43,6 @@
         echo "</ul>";
     ?>
     <h3>Lista con do while</h3>
-
     <?php
 
     $i = 1;
