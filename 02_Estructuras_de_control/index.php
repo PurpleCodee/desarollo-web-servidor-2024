@@ -48,6 +48,24 @@
                 </td>
                 <td>Ejercicios de comparaciones con clases de la semanas</td>
             </tr>
+            <tr>
+                <td>
+                    <a href="edades.php">edades.php</a>
+                </td>
+                <td>Ejercicios de comparaciones con edades</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="listas.php">listas.php</a>
+                </td>
+                <td>Ejercicios de comparaciones con listas/bucles</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Ejercicio_1.php">Ejercicio 1.php</a>
+                </td>
+                <td>Ejercicio 1</td>
+            </tr>
         </tbody>
     </table>
 </body>
