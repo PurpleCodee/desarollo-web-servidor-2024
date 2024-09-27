@@ -64,7 +64,7 @@
                 <td>
                     <a href="Ejercicio_1.php">Ejercicio 1.php</a>
                 </td>
-                <td>Ejercicio 1</td>
+                <td>Primer listado de ejercicios del tema de estructuras de control</td>
             </tr>
         </tbody>
     </table>

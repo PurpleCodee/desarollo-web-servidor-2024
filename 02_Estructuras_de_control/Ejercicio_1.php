@@ -6,6 +6,7 @@
 *
 */
 
+/*MI FORMA*/
 $i = 0;
 $sum;
     echo "<ul>";
@@ -18,6 +19,20 @@ $sum;
         echo "La suma de los numeros pares es $sum";
     echo "</ul>";
 
+/*FORMA DE ALEJANDRA*/
+/*El 0 se evalua falso*/
+$suma = 0;
+
+for($i = 0; $i <= 20; $i++){
+    if($i % 2 == 0){
+        $suma = $suma + $i;
+    }
+}
+
+echo "<h3>La suma de los pares del 0 al 20 es: $suma </h3>";
+echo "<h3>-----------------------------------------------------</h3>";
+
+
 /*EJERCICIO 2
 *
 *(Hay que investigar un poco)
@@ -27,3 +42,93 @@ $sum;
 */
 ?>
 <h3>Ejercicio 2</h3>
+
+<?php
+
+    //LO HACEMOS CON EL MATCH
+
+    $dia = date("l");//l para el dia de la semana en español
+
+    $dia_espanol = match($dia) {
+        "Monday" => $dia_espanol = "Lunes",
+        "Tuesday" => $dia_espanol = "Martes",
+        "Wednesday" => $dia_espanol = "Miercoles",
+        "Thursday" => $dia_espanol = "Jueves",
+        "Friday" => $dia_espanol = "Viernes",
+        "Saturday" => $dia_espanol = "Sabado",
+        "Sunday" => $dia_espanol = "Domingo"
+    };
+    echo "<h3>$dia_espanol</h3>";
+    echo "<h3>-----------------------------------------------------</h3>";
+
+    $mes = date("F");//F para dia del mes en español
+
+    $mes = match ($mes) {
+        "January" => "Enero",
+        "February" => "Febrero",
+        "March" =>  "Marzo",
+        "April" =>  "Abril",
+        "May" => "Mayo",
+        "June" => "Junio",
+        "July" => "Julio",
+        "August" => "Agosto",
+        "September" => "Septiembre",
+        "October" => "Octubre",
+        "November" => "Noviembre",
+        "December" => "Diciembre"
+    };
+    
+    echo "<h3>$mes</h3>";
+    echo "<h3>-----------------------------------------------------</h3>";
+
+    $dia_n = date("j");
+    $anno = date("Y");
+    echo "<h3>$dia $dia_n de $mes de $anno</h3>";
+    echo "<h3>-----------------------------------------------------</h3>";
+?>
+
+<?php
+/*Ejercicio 3 -> HACER UN BUCLE QUE COMPRUEBE SI UN NUMERO ES PRIMO*/
+//BUCLE DESDE 2 HASTA N-1, SI ALGUN RESTO = 0, NO ES PRIMO
+
+$num = 9;
+$primo = true;
+for($i = 2; $i < $num; $i++){
+    if($num % $i == 0){
+        $primo = false;
+        break;
+    }
+}
+if($primo){
+    echo "<h3>El número $num es primo</h3>";
+}
+else{
+    echo "<h3>El número $num no es primo</h3>";
+}
+?>
+
+<?php
+/*LO MISMO QUE EL EJERCICIO 3 PERO CON 50 NUMEROS*/
+
+$num = 2;
+$contPrimos = 0;
+
+echo"<ol>";
+while($contPrimos < 50){
+    $esPrimo = true;
+    for($i = 2; $i < $num; $i++){
+        if($num % $i == 0){
+            $esPrimo = false;
+            break;
+        }
+    }
+    if($esPrimo){
+        $contPrimos++;
+        echo "<li>$num</li>";
+    }
+    $num++;
+}
+echo "</ol>";
+
+?>
+
