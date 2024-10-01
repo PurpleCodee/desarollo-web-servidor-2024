@@ -1,0 +1,13 @@
+ td, th{
+    border: 1px solid black;
+   
+ }
+
+ th{
+    background-color: rgb(230, 218, 250);
+ }
+
+ td{
+    background-color: rgb(194, 183, 243);
+ }
+    
