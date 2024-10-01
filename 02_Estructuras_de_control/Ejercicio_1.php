@@ -105,6 +105,7 @@ if($primo){
 else{
     echo "<h3>El número $num no es primo</h3>";
 }
+echo "<h3>-----------------------------------------------------</h3>";
 ?>
 
 <?php
@@ -129,6 +130,23 @@ while($contPrimos < 50){
     $num++;
 }
 echo "</ol>";
-
+echo "<h3>-----------------------------------------------------</h3>";
 ?>
+
+<?php
+/*CALCULA EL FIBBONACHI DE LOS 10 PRIMEROS NUMEROS PRIMOS*/
+$aux1 = 0;
+$aux2 = 1;
+$fib = null;
+$n = 4;
+
+$n = 4;
+for($i = 0; $i <= $n; $i++){
+    $fib = $aux1 + $aux2;
+    $aux1 = $aux2;
+    $aux2 = $fib;
+}
+echo "<h4>El fibonacci de $n es $fib</h4>"
+?>
+
 
