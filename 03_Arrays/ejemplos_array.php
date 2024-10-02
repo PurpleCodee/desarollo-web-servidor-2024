@@ -275,7 +275,7 @@ echo "<h3> Mi Tabla Buena</h3>";
     "Despliegue de aplicaciones web" => "Alejandro",
     "Empresa e iniciativa emprendedora" => "Gloria",
     "Inglés" => "Virginia"
-  )
+  );
   ?>
   <h3>Tabla de profesores ordenada por asignatura en orden alfabetico</h3>
   <!--FUERA DE LA ETIQUETA PHP-->
@@ -355,10 +355,29 @@ echo "<h3> Mi Tabla Buena</h3>";
   </thead>
   <tbody>
   <?php
-    foreach($alumnos as $nota => $alumno){
+
+$alumnos = array (
+  "Guillermo" => 3,
+  "Daina" => 5,
+  "Angel" => 8,
+  "Juanjo" => 10,
+  "Enya" => 8,
+  "Estela" => 9,
+  "Luis" => 8 
+);
+    foreach($alumnos as $alumno => $nota){
       echo "<tr>";
-      echo "<td>$alumnos</td>";
+      echo "<td>$alumno</td>";
       echo "<td>$nota</td>";
+      if($nota < 5){
+        echo "<td class= 'suspenso'>SUSPENSO</td>";
+      }else if($nota < 7){
+        echo "<td class= 'aprobado'>APROBADO</td>";
+      }else if($nota < 9){
+        echo "<td>NOTABLE</td>";
+      }else{
+        echo "<td>SOBRESALIENTE</td>";
+      }
       echo "</tr>";
     }
     ?>
