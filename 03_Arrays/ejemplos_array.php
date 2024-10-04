@@ -370,9 +370,9 @@ $alumnos = array (
       echo "<td>$alumno</td>";
       echo "<td>$nota</td>";
       if($nota < 5){
-        echo "<td class= 'suspenso'>SUSPENSO</td>";
+        echo "<td class='suspenso'>SUSPENSO</td>";
       }else if($nota < 7){
-        echo "<td class= 'aprobado'>APROBADO</td>";
+        echo "<td class='aprobado'>APROBADO</td>";
       }else if($nota < 9){
         echo "<td>NOTABLE</td>";
       }else{

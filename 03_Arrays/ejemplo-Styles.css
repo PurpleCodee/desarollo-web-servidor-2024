@@ -11,10 +11,10 @@
     background-color: rgb(194, 183, 243);
  }
 
- .suspenso{
+ .suspenso td{
    background-color: red;
  }
 
- .aprobado{
+ .aprobado td{
    background-color: green;
  }
