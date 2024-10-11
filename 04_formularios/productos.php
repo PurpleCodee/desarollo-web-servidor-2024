@@ -26,7 +26,7 @@
          * -Si hay stock, decimos que esta disponible y su precio
          * -Si no hay, decimos que esta agotado.
          */
+
     ?>
-    
 </body>
 </html>
