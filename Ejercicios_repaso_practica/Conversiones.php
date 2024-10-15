@@ -61,6 +61,9 @@
             "de dolares a yenes:" => ($_dinero * 149.5),
             "de yenes a euros:" => ($_dinero / 162.6),
             "de yenes a dolares:" => ($_dinero / 149.5),
+            "de euros a euros:" => ($_dinero),
+            "de yenes a yenes:" => ($_dinero),
+            "de dolares a dolares:" => ($_dinero),
             default => "ERROR A LA HORA DE CONVERTIR!!"
         };
         echo "<h2>Resultado: $resultado</h2>"; 
