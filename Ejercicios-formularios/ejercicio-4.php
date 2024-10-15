@@ -74,6 +74,7 @@ En los select se podrá elegir entre: CELSIUS, KELVIN y FAHRENHEIT.-->
             "de kelvin a fahrenheit:" => (($_temperatura - 273.15) * (9/5) + 32),
             "de fahrenheit a celsius:" => (($_temperatura - 32) * (5/9)),
             "de fahrenheit a kelvin:" => (($_temperatura - 32) * (5/9) + 273.15),
+            
             "de celsius a celsius:" => $_temperatura,
             "de kelvin a kelvin:" => $_temperatura,
             "de fahrenheit a fahrenheit:" => $_temperatura,
